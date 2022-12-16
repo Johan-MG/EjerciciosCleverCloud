@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/209b078117.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Ejercicios CleverCloud</title>
+</head>
+<body>
+    <header class="p-3 mb-2 bg-dark text-white">
+        Ejercicios CleverCloud
+    </header>
+    <main>
+        <div class="mt-4 container-md">
+            <h3>Ejercicio 1</h3>
+            <p>Dado un integer, escribe una función que regrese la suma todos sus dígitos.
+                Es decir, para el integer 12345 las suma de sus dígitos es: 1+2+3+4+5 = 15
+            </p>
+            <div class="input-group mb-3 w-50">
+                <input id="input1" class="form-control" type="number" placeholder="Ingrese una cadena de numeros">
+                <button class="btn btn-outline-secondary" type="button" onclick="digitsSum(document.getElementById('input1').value)">Enviar</button>
+            </div>
+            <h4 id="resultado1">Resultado: </h4>
+        </div>
+        <div class="mt-4 container-md">
+            <h3>Ejercicio 2</h3>
+            <p>Dado un string, escribe una función para verificar si es un palíndromo. Un palíndromo es un
+                texto que se lee igual de izquierda a derecha que de derecha a izquierda. Las palabras:
+                salas, oso, reconocer y oro​ son palíndromos. 
+            </p>
+            <div class="input-group mb-3 w-50">
+                <input id="input2" class="form-control" type="text" placeholder="Ingrese una palabra">
+                <button class="btn btn-outline-secondary" type="button" onclick="isPalindrome(document.getElementById('input2').value)">Enviar</button>
+            </div>
+            <h4 id="resultado2">Resultado: </h4>
+        </div>
+        <div class="mt-4 container-md">
+            <h3>Ejercicio 3</h3>
+            <p>Dado un arreglo de enteros, encuentra el par de elementos adyacentes tales que su
+                producto sea el más grande​ y devuelve dicho producto.
+                Se consideran como elementos adyacentes aquellos que se encuentren a la izquierda o a la
+                derecha, es decir, dado el arreglo [3, 6, -2, 5] los elementos adyacentes serían: <br>
+                ● 3 y 6 => 3 * 6 = 18 <br>
+                ● 6 y-2 => 6 * -2 = -12 <br>
+                ● -2 y 5 => 5 * -2 = -10 <br>
+                La función debería devolver 18 ​dado que es el producto de adyacentes más grande.<br>
+                <br>
+                Deverá ingresar los números separados por comas como se muestra en el input.
+                
+            </p>
+            <div class="input-group mb-3 w-50">
+                <input id="input3" class="form-control" type="text" placeholder="Ingrese un arreglo: 3, 6, -2, 5">
+                <button class="btn btn-outline-secondary" type="button" onclick="maxAdjacentProd(document.getElementById('input3').value)">Enviar</button>
+            </div>
+            <h4 id="resultado3">Resultado: </h4>
+        </div>
+    </main>
+    <footer class="mt-4 p-3 bg-dark text-white">
+        <div class="p-3 position-relative">
+            <h5 class="position-absolute top-50 start-50 translate-middle">Johan Morales Garcia</h5>
+        </div>
+        <div class="pt-3 position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+            <a href="https://www.linkedin.com/in/johanmg/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Johan-MG" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</html>
